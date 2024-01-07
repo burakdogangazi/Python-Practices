@@ -1,0 +1,1 @@
+# clean up sayesinde makale silinince resim de kalktı

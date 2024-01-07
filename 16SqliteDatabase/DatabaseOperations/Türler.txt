@@ -1,0 +1,11 @@
+Veritabanları ikiye ayrılır
+
+1.Relational Database(İlişkisel Veritabanları) : Tablolardan oluşur MYSQL,SQLITE Veritabanları
+
+2.DocumentBased Database(Döküman Veritabanları) : Dökümanlardan oluşur. MongoDB, Azure DocumentDb
+
+SQLITE Veritabanı sunucu kurulumunu gerektirmez
+w3schools dan sql sorgularına bakılabilir.
+
+sqlitebrowser.org dan indirdik
+

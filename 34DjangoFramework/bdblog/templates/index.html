@@ -1,0 +1,38 @@
+{% extends "layout.html" %}
+
+
+{% block body %}
+
+
+<div class ="jumbotron text-center">
+
+    <h3>Burak Doğan Kişisel Bloğuna Hoşgeldiniz</h3>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi quidem sint tenetur sit excepturi dignissimos voluptas repellendus quas doloremque ullam.</p>
+
+</div>
+
+
+<!--{% if number == 20 %}
+    <p>sayı 20 dir</p>
+{% else %}
+    <p>sayı 20 değil</p>
+{% endif %}   views içinde gönderdiğmiz context içinde burada if cond-->
+
+<!--<ul>
+{% for number in numbers %}
+    <li>{{number}}</li>
+{% endfor %}
+Burada views içinden sayılar gödenrdik ve liste şeklinde bastırdık
+</ul> -->
+
+<p>
+    {% if request.user.is_authenticated %}
+        Giriş Yapılmış, {{request.user.username}}
+    {% else %}
+        Giriş Yapılmamış
+    {% endif %}
+</p>
+
+
+
+{% endblock body %}

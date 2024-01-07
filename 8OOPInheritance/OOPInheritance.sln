@@ -1,0 +1,23 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31424.327
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "OOPInheritance", "OOPInheritance\OOPInheritance.pyproj", "{22C1F594-5ECB-4085-9EF2-0A8BCA41167F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{22C1F594-5ECB-4085-9EF2-0A8BCA41167F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{22C1F594-5ECB-4085-9EF2-0A8BCA41167F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C08E15A3-495C-4168-B6AD-295AF659E2E1}
+	EndGlobalSection
+EndGlobal

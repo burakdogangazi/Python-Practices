@@ -1,0 +1,23 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31424.327
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "Metodlar", "Metodlar\Metodlar.pyproj", "{FCBDEE76-4EB0-4BD8-ACF2-457F38E72CB0}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FCBDEE76-4EB0-4BD8-ACF2-457F38E72CB0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FCBDEE76-4EB0-4BD8-ACF2-457F38E72CB0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {2A1D1522-2560-418B-B092-8DBEAC7CB9A1}
+	EndGlobalSection
+EndGlobal

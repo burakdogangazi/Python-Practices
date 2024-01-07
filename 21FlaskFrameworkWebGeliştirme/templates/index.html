@@ -1,0 +1,60 @@
+{% extends 'layout.html' %}
+
+
+{% block body %}
+
+<br>
+
+<div class ="jumbotron text-center">
+
+    <h3>Burak Doğan Kişisel Bloğuna Hoşgeldiniz</h3>
+    <p> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolores, voluptas?</p>
+
+</div>
+
+<!--<ul> Döngü Kullanımı Liste İçinde Sözlük Biçiminde 
+
+    {% for article in articles %}
+
+        <li> Article Id : {{article.id}} - Title : {{article.title}} - Content : {{article.content}}  </li>
+
+    {% endfor %}
+
+        
+    # articles = [ Döngü için Örnek
+
+    #     {"id":1,"title":"Deneme1","content":"Deneme2"},
+    #     {"id":2,"title":"Deneme3","content":"Deneme4"},
+    #     {"id":3,"title":"Deneme5","content":"Deneme6"}
+        # articles = articles bunu render template ile gönder
+    # ]  Bu articles alanını def index içine yazarız
+
+
+</ul> -->
+
+
+
+
+
+
+
+
+
+
+
+<!--  Koşullu ifadeler
+{% if answer == 1 %}
+
+<p>1. İşlem</p>
+
+{% elif answer == 2 %}
+
+<p>2. İşlem</p>
+
+{% else %}
+
+<p>Geçersiz İşlem</p>
+index .html yanına blog py de işlem == 1 vb diyerek deneyebiliriz
+{% endif %} -->
+
+{% endblock  %}

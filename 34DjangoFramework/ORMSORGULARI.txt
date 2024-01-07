@@ -1,0 +1,116 @@
+In [2]: from django.contrib.auth.models import User   
+
+In [3]: from article.models import Article
+
+
+
+In [4]: User
+Out[4]: django.contrib.auth.models.User
+
+
+
+In [5]: Article
+Out[5]: article.models.Article
+
+
+
+
+In [6]: newUser =User(username = "denemekullanici",password = "123")
+
+In [7]: newUser
+
+Out[7]: <User: denemekullanici>
+
+In [12]: newUser.save()
+
+
+
+
+ŞİFRELEYEREK KAYDETMEK İÇİN
+In [13]: newUser2 = User(username = "denemekullanici2")
+
+In [14]: newUser2.set_password("123")
+
+In [15]: newUser2.save()
+
+
+
+In [16]: newUser3 = User()
+
+In [17]: newUser3.username = "denemekullanici3"
+
+In [18]: newUser3.set_password("123")
+
+In [19]: newUser3.first_name="Burak"
+
+In [20]: newUser3.save()
+
+
+
+In [21]: article = Article(title = "djangoshell deneme",content ="icerikicerik", author = newUser3)
+
+In [22]: article.save()
+
+
+
+In [23]: article2 = Article()
+
+In [24]: article2.title = "Deneme15"
+
+In [25]: article2.content ="icerikicerik2"
+
+In [26]: article2.author = newUser3
+
+In [27]: article2.save()
+
+
+
+In [28]: Article.objects.create(title = "Dneme 21",content = "21",author = newUser2)
+Out[28]: <Article: Dneme 21>
+
+
+
+In [29]: article = Article.objects.create(title = "Dneme 31",content = "321",author =newUser2)
+
+In [30]: article
+Out[30]: <Article: Dneme 31>
+
+
+In [32]: article.title = "Deneme31 degisti"
+
+In [33]: article.save()
+
+
+
+In [34]: Article.objects.all()
+Out[34]: <QuerySet [<Article: deneme1>, <Article: selam>, <Article: denenem2>, <Article: djangoshell deneme>, <Article: Deneme15>, <Article: Dneme 21>, <Article: Deneme31 degisti>]>
+
+
+
+
+In [35]: Article.objects.get(title = "selam")
+Out[35]: <Article: selam>
+
+In [36]: article = Article.objects.get(title = "selam")
+
+In [37]: article.title
+Out[37]: 'selam'
+
+In [38]: article.delete()
+Out[38]: (1, {'article.Article': 1})
+
+
+
+In [39]: article = Article.objects.get(id = 1)
+
+In [40]: article.title
+Out[40]: 'deneme1'
+
+
+
+In [42]: Article.objects.filter(title__contains = "Den")
+Out[42]: <QuerySet [<Article: deneme1>, <Article: denenem2>, <Article: djangoshell deneme>, <Article: Deneme15>, <Article: Deneme31 degisti>]>
+
+
+
+
